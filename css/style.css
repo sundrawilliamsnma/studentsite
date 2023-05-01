@@ -108,6 +108,7 @@ main {
     background-image: url('../img/book.jpeg');
     background-position: center top;
     background-size: cover;
+    padding: 10em 1em 6em 1em;
 }
 
 /* FOOTER */

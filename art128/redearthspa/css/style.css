@@ -109,18 +109,7 @@ p {
   text-align: center;
 }
 
-.centered p {
-  margin-left: auto;
-  margin-right: auto;
-}
 
-strong {
-  font-weight: 700;
-}
-
-em {
-  font-style: italic;
-}
 
 /* #LINKS */
 a {
@@ -131,6 +120,8 @@ a {
 a:hover {
   color: #003;
 }
+
+
 
 /* #BLOCK QUOTES  */
 blockquote {
@@ -241,13 +232,7 @@ img {
   height: auto;
 }
 
-/* Image Floats */
-img.float-left {
-  float: left;
-  margin-right: 1em;
-  margin-bottom: 1em;
-  clear: both;
-}
+
 
 /* Clear Floats */
 .group::after {
@@ -1155,31 +1140,3 @@ main {
   animation-duration: 0.5s;
 }
 
-/* #SITE SPECIFIC CUSTOM CSS (e.g. Base Overrides)
----------------------------------
-	#TYPOGRAPHY OVERRIDES
-		#@FONT-FACE
-        #BODY
-		#HEADINGS
-		#PARAGRAPHS
-    #LAYOUT OVERRIDES
-		#BODY
-		#CONTAINER
-    #NAVIGATION
-        # site-id
-        #SITE-NAVIGATION
-    #CONTENT
-        #SECTIONS
---------------------------------- */
-/* Custom Overrides */
-/*
-body {
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-}
-*/

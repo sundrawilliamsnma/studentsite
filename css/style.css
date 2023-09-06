@@ -2,217 +2,97 @@
 * { box-sizing: border-box; }
 body { margin: 0; }
 
-/* GLOBAL COLORS */
-body { color: rgba(0, 0, 0, 0.8); }
-a { color: rgba(0, 102, 204, 1); }
-a:hover { color: rgba(0, 51, 153, 1); }
+/* GLOBAL COLORS  */
+body {
+    background-color: rgba(0,0,0,1);
+    color: rgba(255,255,255,.8);
+}
+a { color: rgba(255,255,51,1); }
 
 /* GLOBAL TYPOGRAPHY */
 body {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 88.75%; /* 14px */
-  line-height: 1.4;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 88.75%; /* 14px */
+    line-height: 1.4;
+}
+p { max-width: 35em; }
+a { text-decoration: none; }
+h1, h2, h3 { font-weight: normal;}
+
+/* LAYOUT */
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
 
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 1em;
+}
 
 /* SITE STRUCTURE */
-
-header {
-    background-color: rgba(0, 102, 204, 1);
-    color: rgba(0, 0, 0, 0.8); 
+.site-header {
+    display: flex;
+    justify-content: space-between;
     padding: 1em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
 }
 
-header a {
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: none;
-}
-
-header a:hover {
-    color: rgba(255, 255, 255, 1);
-}
-
-
-/* SITE ID */
-.site-id h1 {
+.site-header h1 {
     margin: 0;
 }
 
 /* SITE NAV */
 .site-nav ul {
     display: flex;
-    justify-content: flex-end;
+    list-style: none;
     margin: 0;
     padding: 0;
-    list-style: none;
 }
 
-.site-nav  a {
+.site-nav a {
+    padding: 1em;
     display: block;
-    padding: 1em;
 }
 
-/* MAIN */
-main {
-    background: rgba(0,0,0,.05);
-}
-
-/* HERO SECTION */
-.hero {
-    background-color: rgba(0, 102, 204, 1);
-    text-align: center;
-    color: white;
-    padding: 6em 1em;
-}
-
-.hero h2 {
-    font-size: 6em;
-    line-height: 1;
-    text-transform: uppercase;
-    margin: 0 auto;
-}
-
-.hero p {
-    max-width: 30em;
-    margin: 1em auto;
-}
-
-/* COURSES SECTION */
-.courses {
-    padding: 6em 1em;
-    display: grid;
-    justify-content: center;
-}
-
-.courses ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.courses h3{
-    text-align: center;
-}
-
-/* CUSTOM HOME PAGE STYLING */
-.page-home header {
-    position: absolute;
-    width: 100%;
-    background-color: transparent;
-}
-
-.page-home .hero {
-    background-image: url('../img/book.jpeg');
-    background-position: center top;
-    background-size: cover;
-    padding: 10em 1em 6em 1em;
-}
-
-/* FOOTER */
-footer {
-    border-top: 1px solid rgba(0,0,0,.05);
-    padding: 1em;
-}
-
-/* SOCIAL NAV */
-.social-nav ul {
-    margin: 0;
-    padding: 0;
+/* SITE MAIN */
+.site-main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    list-style: none;
+    align-items: center;
 }
 
-.social-nav  a {
-    display: block;
-    padding: 1em;
-}
-
-/* LAYOUT */
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-section {
-    padding: 3em 1em;
-}
-
-/* SIDEBAR/ASIDE */
-aside {
-    padding: 2em 0;
-  }
-  
-@media (min-width: 768px) {
-    .two-col-sidebar {
-        display: grid;
-        grid-template-columns: 20em auto;
-    }
-    .two-col-sidebar aside {
-        border-right: 1px solid rgba(0, 0, 0, 0.1);
-        margin: 0 3em 2em 0;
-        padding: .3em 2em 0 0;
-    }
-}
-
-/* SUB PAGES */
-.page-sub .hero {
-    background-color:rgba(0, 0, 0, 0.1);
-    color: rgba(0, 0, 0, 0.8);
-}
-
-/* COURSE PAGES WITH MULTIPLE PROJECT LISTS */
-.coursework {
-    padding: 3em 1em;
+/* TWO COLUMN LISTS  */
+.list-two-col {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
 }
-
-.project {
-    margin: 2em;
-}
-
-/* CODE BLOCKS */
-
-pre code {
-    width: 100%;
-    display: block;
-    border: 1px solid #ddd;
-    background-color: #fff;
-    padding: 1em 3em;
-    margin-bottom: 1em;
-    line-height: 1.5;
-  }
-
-.markup-box {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #fff;
-    padding: 1em 3em;
+.list-two-col ul {
     margin-bottom: 1em;
 }
-
-/* DEFINITION LISTS */
-dt {
-    font-weight: bold;
-    margin-top: 1em;
+.list-two-col ul ul {
+    margin-bottom: 0;
 }
-dd {
-    margin: 0;
+.list-two-col li {
+    padding-right: 2em;
 }
 
-/* TWO COLUMN LISTS */
-.list-two-col{
-    background-color: red;
+/* ASSIGNMENT LISTS */
+.list-assignments li li {
+    color: rgba(255,255,255,.4);
 }
 
-/* FOR DEV PURPOSES */
-/* body * {
-    background-color: rgba(0,0,0,.05) !important;
-    border: 1px solid rgba(0,0,0,.1) !important;
-    color: rgba(0,0,0,.5) !important;
+
+/* FOR TESTING ONLY */
+
+/* *, body {
+    background: rgba(0,0,0,.1);
+    border: 1px solid black;
+    padding: 10px;
 } */
+
+/* .site-header { background-color: rgba(255,0,0,.3); }
+.site-main { background-color: rgba(2, 87, 2, 0.3); } */
+/* body { background-color: rgba(0,0,255,.3); } */

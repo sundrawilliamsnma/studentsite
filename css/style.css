@@ -4,8 +4,8 @@ body { margin: 0; }
 
 /* GLOBAL COLORS */
 body { color: rgba(0, 0, 0, 0.8); }
-a { color: rgba(0, 102, 204, 1); }
-a:hover { color: rgba(0, 51, 153, 1); }
+a { color: rgba(254, 122, 122, 0.8); }
+a:hover { color: rgba(95, 95, 95, 0.8); }
 
 /* GLOBAL TYPOGRAPHY */
 body {
@@ -14,12 +14,11 @@ body {
   line-height: 1.4;
 }
 
-
 /* SITE STRUCTURE */
 
 header {
-    background-color: rgba(0, 102, 204, 1);
-    color: rgba(0, 0, 0, 0.8); 
+    background-color: rgba(254, 122, 122, 0.8);
+    color: rgba(255, 228, 254, 0.8); 
     padding: 1em;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -27,14 +26,13 @@ header {
 }
 
 header a {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
 header a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: rgb(255, 255, 255);
 }
-
 
 /* SITE ID */
 .site-id h1 {
@@ -62,7 +60,7 @@ main {
 
 /* HERO SECTION */
 .hero {
-    background-color: rgba(0, 102, 204, 1);
+    background-color: rgb(255, 205, 243);
     text-align: center;
     color: white;
     padding: 6em 1em;
@@ -95,20 +93,6 @@ main {
 
 .courses h3{
     text-align: center;
-}
-
-/* CUSTOM HOME PAGE STYLING */
-.page-home header {
-    position: absolute;
-    width: 100%;
-    background-color: transparent;
-}
-
-.page-home .hero {
-    background-image: url('../img/book.jpeg');
-    background-position: center top;
-    background-size: cover;
-    padding: 10em 1em 6em 1em;
 }
 
 /* FOOTER */
@@ -160,8 +144,24 @@ aside {
 
 /* SUB PAGES */
 .page-sub .hero {
-    background-color:rgba(0, 0, 0, 0.1);
-    color: rgba(0, 0, 0, 0.8);
+    background-color:rgb(255, 255, 255);
+    color: rgba(254, 122, 122, 0.8);
+}
+
+.page-home .hero{
+    background-image: url('../img/flowers.png');
+    background-size: cover;
+    background-position: center;
+    padding: 30vh 1em 20vh 1em;
+}
+
+.page-home header { 
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+}
+.page-home header a{
+    color: rgba(254, 122, 122, 0.8);
 }
 
 /* COURSE PAGES WITH MULTIPLE PROJECT LISTS */
@@ -205,9 +205,9 @@ dd {
     margin: 0;
 }
 
-/* TWO COLUMN LISTS */
-.list-two-col{
-    background-color: red;
+/* LISTS OF ASSIGNMENTS */
+.list-assignments li li {
+    color: rgb(141, 139, 139); 
 }
 
 /* FOR DEV PURPOSES */

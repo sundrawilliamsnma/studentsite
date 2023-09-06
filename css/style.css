@@ -205,6 +205,11 @@ dd {
     margin: 0;
 }
 
+/* TWO COLUMN LISTS */
+.list-two-col{
+    background-color: red;
+}
+
 /* FOR DEV PURPOSES */
 /* body * {
     background-color: rgba(0,0,0,.05) !important;

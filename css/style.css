@@ -93,7 +93,7 @@ main {
     list-style: none;
 }
 
-.courses h3{
+.courses h3 {
     text-align: center;
 }
 
@@ -109,6 +109,18 @@ main {
     background-position: center top;
     background-size: cover;
     padding: 10em 1em 6em 1em;
+}
+
+/* COURSES PAGES WITH MULTIPLE PROJECT LISTS */
+.coursework {
+    padding: 3em 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    margin: 2em;
 }
 
 /* FOOTER */
